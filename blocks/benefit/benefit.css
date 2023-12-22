@@ -1,0 +1,186 @@
+.benefit {
+  padding: 70px 0;
+}
+
+.benefit__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefit__title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.benefit__subtitle {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.benefit__subtitle::after {
+  content: "";
+  display: inline-block;
+  width: 43px;
+  height: 2px;
+  background-color: #383A4C;
+}
+
+.benefit__subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 43px;
+  height: 2px;
+  background-color: #383A4C;
+}
+
+.benefit__description {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 724px;
+  margin-bottom: 50px;
+}
+
+.benefit__list {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  counter-reset: count 0;
+}
+
+.benefit__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex-basis: 196px;
+}
+
+.benefit__item-count {
+  position: relative;
+  width: 122px;
+  height: 122px;
+}
+
+.benefit__item-count::after {
+  position: absolute;
+  content: counter(count);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFF;
+  font-size: 57px;
+  font-weight: 500;
+  counter-increment: count;
+}
+
+.benefit__item-discription {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+@media (max-width: 1024px) {
+  .benefit__title {
+    font-size: 32px;
+    margin-bottom: 23px;
+  }
+
+  .benefit__subtitle {
+    gap: 22px;
+    font-size: 20px;
+    margin-bottom: 33px;
+  }
+
+  .benefit__subtitle::after {
+    width: 40px;
+  }
+  
+  .benefit__subtitle::before {
+    width: 40px;
+  }
+
+  .benefit__description {
+    font-size: 16px;
+  }
+
+  .benefit__item {
+    gap: 26px;
+    flex-basis: 180px;
+  }
+
+  .benefit__item-count {
+    width: 104px;
+    height: 104px;
+  }
+
+  .benefit__item-count::after {
+    font-size: 52px;
+}
+
+  .benefit__item-discription {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 870px) {
+  .benefit__list {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 810px) {
+  .benefit__list {
+    gap: 15px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefit {
+    padding: 30px 0 60px;
+  }
+
+  .benefit__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .benefit__subtitle {
+    gap: 22px;
+    font-size: 16px;
+    margin-bottom: 26px;
+  }
+
+  .benefit__subtitle::after {
+    width: 20px;
+  }
+  
+  .benefit__subtitle::before {
+    width: 20px;
+  }
+
+  .benefit__description {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+
+  .benefit__list {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .benefit__item {
+    gap: 26px;
+    flex-basis: 0;
+    width: 190px;
+  }
+}

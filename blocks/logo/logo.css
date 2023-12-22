@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: #15A9CB;
+  font-family: Pacifico;
+  font-size: 25px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .logo {
+    font-size: 11px;
+    width: 30px;
+    height: 30px;
+  }
+}
