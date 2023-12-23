@@ -15,7 +15,7 @@
   color: #15A9CB;
 }
 
-.contacts__button {
+.contacts__link {
   color: #FFFFFF;
   font-size: 16px;
   font-style: normal;
@@ -24,15 +24,15 @@
   transition: color .2s ease-in;
 }
 
-.contacts__button-mobile {
+.contacts__tel-icon {
   display: none;
 }
 
-.contacts__button:hover {
+.contacts__link:hover {
   color: #15A9CB;
 }
 
-.contacts__button::after {
+.contacts__link::after {
   content: "";
   display: block;
   width: 100%;
@@ -41,7 +41,7 @@
   transition: background-color .2s ease-in;
 }
 
-.contacts__button:hover::after {
+.contacts__link:hover::after {
   background-color: #15A9CB;
 }
 
@@ -57,21 +57,21 @@
     font-size: 21px;
   }
 
-  .contacts__button {
+  .contacts__link {
     font-size: 13px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .contacts__tel {
+  .contacts__tel-number {
     display: none;
   }
 
-  .contacts__button {
+  .contacts__link {
     display: none;
   }
 
-  .contacts__button-mobile {
+  .contacts__tel-icon {
     display: block;
   }
 }
