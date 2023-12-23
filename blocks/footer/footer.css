@@ -33,7 +33,7 @@
 
 @media (max-width: 1024px) {
   .footer {
-    padding: 49px 0;
+    padding: 36px 0 49px;
   }
 
   .footer__author {
@@ -56,6 +56,11 @@
     flex-wrap: wrap;
     align-items: center;
     row-gap: 25px;
+  }
+
+  .footer__copyright {
+    flex-basis: 85px;
+    font-size: 8px;
   }
 
   .footer__author {
